@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta name = "viewport" content= "with=device-width, initial-scale=1.0">
+
+    <title> CapCodes </title>
+
+    <!--linking the css file to html file-->
+    <!--the html file is not linked to the css file (?)-->
+    <link rel="stylesheet" href="styles.css">
+
+    
+    <!--this is the font information-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;0,700;1,200;1,300&display=swap" rel="stylesheet">
+    
+    <!--this the icon for the smaller screens so they can open up a  menu-->
+    <link rel = "stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+
+
+<body>
+
+    <section class = "header">
+        <nav>
+            <a href = "Capecodes.html"><img src = "C:\Users\mercyb\Pictures\CameraRoll\LogoPicture.jpg"></a> 
+            <div class = "nav-links" id="navLinks"> 
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+
+                <!--all the links, named it nav links-->
+                <!--add the anchor tag so we can click on the links-->
+                <ul>
+                    <li><a href = "">ABOUT</a></li>
+                    <li><a href = "">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+         <div class = "text-box">
+            <h1> Join Capcodes </h1>
+             <!--the br adds a break-->
+            <p> Capcodes is a great opportunity to build your knowledge in C++, SQL, and Java. <br> We are here to help you put your best foot foward. </p>
+            <a class = "hero-btn" > LOGIN </a>
+        </div>
+
+    </section>
+
+    <!--LOGIN SECTION-->
+    
+
+    <!--JavaScript for the Toggle Menu-->
+    <script>
+        var navLinks = document.getElementById("navLinks")
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
