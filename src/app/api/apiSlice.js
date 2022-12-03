@@ -52,7 +52,7 @@ const baseQueryWithReauth = async (args, api, extraOptions) => {
 
 
 export const apiSlice = createApi({
-    baseQuery: fetchBaseQuery({ baseUrl: 'https://capcodes-2023.herokuapp.com' }),
+    baseQuery: fetchBaseQuery({ baseUrl: 'https://capcodes-2023.herokuapp.com/' }),
     tagTypes: ['Module', 'User','Submit_POST'],
     endpoints: builder => ({})
 })
