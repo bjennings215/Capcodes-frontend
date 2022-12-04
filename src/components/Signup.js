@@ -32,7 +32,7 @@ const Signup = () => {
        
         var config = {
             method: 'POST',
-            url: 'http://localhost:5000/users',
+            url: 'https://capcodes-2023.herokuapp.com',
             headers: {
               'Content-Type': 'application/json',
               'Access-Control-Allow-Origin': '*',
@@ -43,6 +43,7 @@ const Signup = () => {
         axios(config)
             .then(function (response) {
                 console.log(JSON.stringify(response.data));
+                navigate('/')
             })
             .catch(function (error) {
                 console.log(error);
