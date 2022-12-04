@@ -32,7 +32,7 @@ const Signup = () => {
        
         var config = {
             method: 'POST',
-            url: 'https://capcodes-2023.herokuapp.com',
+            url: 'https://capcodes-2023.herokuapp.com/users',
             headers: {
               'Content-Type': 'application/json',
               'Access-Control-Allow-Origin': '*',

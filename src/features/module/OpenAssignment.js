@@ -53,7 +53,7 @@ const OpenedAssignment = ({module}) => {
   const posttoDB = async () => {
     var config = {
       method: 'POST',
-      url: 'https://capcodes-2023.herokuapp.com//submitPOST',
+      url: 'https://capcodes-2023.herokuapp.com/submitPOST',
       headers: {
         'Content-Type': 'application/json',
         'Access-Control-Allow-Origin': '*',
